@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EuroAfricaLink | Procurement & Shipping from Europe to Africa</title>
+  <meta name="description" content="Procurement, sourcing and shipping of machinery, parts, automobiles and industrial goods from Europe to Douala, Cameroon and beyond." />
+  <meta property="og:title" content="EuroAfricaLink | Procurement & Shipping from Europe to Africa" />
+  <meta property="og:description" content="We source machinery, vehicles, parts and merchandise in Europe, manage the purchase and arrange shipping to Douala and other destinations." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=boska@400,500,700&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --font-display: 'Boska', Georgia, serif;
+      --font-body: 'Satoshi', Inter, Arial, sans-serif;
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.8rem);
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --space-24: 6rem;
+      --color-bg: #f7f6f2;
+      --color-surface: #fbfaf7;
+      --color-surface-2: #f1eee7;
+      --color-border: rgba(40, 37, 29, 0.12);
+      --color-text: #28251d;
+      --color-text-muted: #6f6d67;
+      --color-text-inverse: #f9f8f4;
+      --color-primary: #01696f;
+      --color-primary-hover: #0c4e54;
+      --color-accent: #d19900;
+      --color-accent-soft: rgba(209, 153, 0, 0.12);
+      --radius-sm: 0.5rem;
+      --radius-md: 0.9rem;
+      --radius-lg: 1.25rem;
+      --radius-xl: 1.75rem;
+      --radius-full: 999px;
+      --shadow-sm: 0 6px 18px rgba(31, 25, 18, 0.06);
+      --shadow-md: 0 18px 45px rgba(31, 25, 18, 0.09);
+      --content: 1180px;
+    }
+
+    [data-theme="dark"] {
+      --color-bg: #181715;
+      --color-surface: #201f1d;
+      --color-surface-2: #2b2927;
+      --color-border: rgba(255, 255, 255, 0.1);
+      --color-text: #ede9df;
+      --color-text-muted: #b6b1a8;
+      --color-text-inverse: #151412;
+      --color-primary: #54a0aa;
+      --color-primary-hover: #73b4bc;
+      --color-accent: #e7b342;
+      --color-accent-soft: rgba(231, 179, 66, 0.13);
+      --shadow-sm: 0 6px 18px rgba(0, 0, 0, 0.28);
+      --shadow-md: 0 18px 45px rgba(0, 0, 0, 0.35);
+    }
+
+    * , *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      line-height: 1.6;
+      color: var(--color-text);
+      background: radial-gradient(circle at top right, var(--color-accent-soft), transparent 22%), var(--color-bg);
+    }
+    img, svg { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; }
+    .skip-link {
+      position: absolute; left: 1rem; top: -3rem; background: var(--color-primary); color: white;
+      padding: .6rem .9rem; border-radius: var(--radius-full); z-index: 1000;
+    }
+    .skip-link:focus { top: 1rem; }
+    .container { width: min(var(--content), calc(100% - 2rem)); margin: 0 auto; }
+    .site-header {
+      position: sticky; top: 0; z-index: 50; backdrop-filter: blur(14px);
+      background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between; gap: var(--space-4);
+      min-height: 78px;
+    }
+    .brand {
+      display: inline-flex; align-items: center; gap: .85rem; font-weight: 700; letter-spacing: .01em;
+    }
+    .brand-mark {
+      width: 42px; height: 42px; border-radius: 14px; background: linear-gradient(135deg, var(--color-primary), color-mix(in srgb, var(--color-primary) 55%, black));
+      color: white; display: grid; place-items: center; box-shadow: var(--shadow-sm);
+    }
+    .brand-text strong { display: block; font-size: var(--text-sm); }
+    .brand-text span { display: block; font-size: var(--text-xs); color: var(--color-text-muted); }
+    .nav-links {
+      display: flex; align-items: center; gap: 1rem; font-size: var(--text-sm);
+    }
+    .nav-links a { padding: .55rem .7rem; border-radius: var(--radius-full); }
+    .nav-links a:hover { background: var(--color-surface-2); }
+    .nav-actions { display: flex; gap: .75rem; align-items: center; }
+    .theme-toggle, .menu-toggle {
+      width: 44px; height: 44px; border-radius: 999px; border: 1px solid var(--color-border);
+      background: var(--color-surface); color: var(--color-text); display: grid; place-items: center; cursor: pointer;
+    }
+    .menu-toggle { display: none; }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center; gap: .55rem;
+      min-height: 46px; padding: .8rem 1.2rem; border-radius: var(--radius-full); font-size: var(--text-sm);
+      font-weight: 700; border: 1px solid transparent; transition: .18s ease;
+    }
+    .button-primary { background: var(--color-primary); color: white; box-shadow: var(--shadow-sm); }
+    .button-primary:hover { background: var(--color-primary-hover); transform: translateY(-1px); }
+    .button-secondary { background: transparent; border-color: var(--color-border); }
+    .button-secondary:hover { background: var(--color-surface); }
+
+    .hero {
+      padding: clamp(3.5rem, 7vw, 7rem) 0 clamp(3rem, 7vw, 6rem);
+      display: grid; grid-template-columns: 1.12fr .88fr; gap: clamp(1.5rem, 4vw, 3rem); align-items: center;
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: .55rem; padding: .45rem .85rem; border-radius: var(--radius-full);
+      background: var(--color-surface); border: 1px solid var(--color-border); color: var(--color-text-muted); font-size: var(--text-xs);
+      text-transform: uppercase; letter-spacing: .09em;
+    }
+    .hero h1 {
+      margin: 1rem 0 1rem; font-family: var(--font-display); font-weight: 500; line-height: .98; font-size: var(--text-2xl);
+      max-width: 12ch;
+    }
+    .hero p {
+      max-width: 60ch; color: var(--color-text-muted); margin-bottom: 1.4rem;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-bottom: 1.35rem; }
+    .hero-points {
+      display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: .9rem; margin-top: 1.4rem;
+    }
+    .hero-point {
+      padding: 1rem; border: 1px solid var(--color-border); background: var(--color-surface); border-radius: var(--radius-lg);
+    }
+    .hero-point strong { display: block; margin-bottom: .2rem; font-size: var(--text-sm); }
+    .hero-point span { font-size: var(--text-sm); color: var(--color-text-muted); }
+    .hero-card {
+      background: linear-gradient(180deg, var(--color-surface), color-mix(in srgb, var(--color-surface) 60%, var(--color-surface-2)));
+      border: 1px solid var(--color-border); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); overflow: hidden;
+    }
+    .hero-panel-top {
+      padding: 1.25rem; border-bottom: 1px solid var(--color-border); display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    }
+    .hero-panel-top .tag { font-size: var(--text-xs); color: var(--color-text-muted); text-transform: uppercase; letter-spacing: .08em; }
+    .hero-visual {
+      padding: 1.4rem; display: grid; gap: 1rem;
+    }
+    .route-card, .quote-card {
+      background: var(--color-bg); border: 1px solid var(--color-border); border-radius: calc(var(--radius-xl) - .6rem); padding: 1rem;
+    }
+    .route-line { display: flex; align-items: center; gap: .75rem; justify-content: space-between; font-size: var(--text-sm); }
+    .route-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--color-primary); box-shadow: 0 0 0 8px rgba(1,105,111,.12); }
+    .route-dash { flex: 1; height: 2px; background: linear-gradient(90deg, var(--color-primary), var(--color-accent)); opacity: .7; }
+    .mini-list { display: grid; gap: .75rem; }
+    .mini-item { display: flex; align-items: flex-start; gap: .7rem; font-size: var(--text-sm); color: var(--color-text-muted); }
+    .mini-item b { color: var(--color-text); display: block; }
+
+    section { padding: clamp(2.5rem, 6vw, 5rem) 0; }
+    .section-heading { display: flex; justify-content: space-between; gap: 1rem; align-items: end; margin-bottom: 1.5rem; }
+    .section-heading h2 {
+      margin: 0; font-family: var(--font-display); font-weight: 500; font-size: var(--text-xl);
+    }
+    .section-heading p { margin: 0; color: var(--color-text-muted); max-width: 58ch; }
+
+    .services-grid, .audience-grid, .faq-grid { display: grid; gap: 1rem; }
+    .services-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .audience-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .faq-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+
+    .card {
+      background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.2rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .card .kicker {
+      font-size: var(--text-xs); text-transform: uppercase; letter-spacing: .08em; color: var(--color-primary); margin-bottom: .55rem;
+    }
+    .card h3 { margin: 0 0 .45rem; font-size: var(--text-lg); line-height: 1.15; }
+    .card p { margin: 0; color: var(--color-text-muted); font-size: var(--text-sm); }
+    .card ul { margin: .85rem 0 0; padding-left: 1rem; color: var(--color-text-muted); font-size: var(--text-sm); }
+
+    .process {
+      display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 1rem;
+    }
+    .step {
+      background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.15rem;
+    }
+    .step-no { font-size: var(--text-xs); color: var(--color-primary); text-transform: uppercase; letter-spacing: .08em; margin-bottom: .45rem; }
+    .step h3 { margin: 0 0 .35rem; font-size: var(--text-base); }
+    .step p { margin: 0; color: var(--color-text-muted); font-size: var(--text-sm); }
+
+    .language-wrap {
+      display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem;
+    }
+    .lang-card { padding: 1.25rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); }
+    .lang-card h3 { margin: 0 0 .55rem; font-size: var(--text-lg); }
+    .lang-card p, .lang-card li { color: var(--color-text-muted); font-size: var(--text-sm); }
+    .lang-card ul { padding-left: 1rem; margin: .8rem 0 0; }
+    .sample-box {
+      margin-top: 1rem; background: var(--color-bg); border: 1px dashed var(--color-border); border-radius: var(--radius-md); padding: 1rem;
+    }
+    .sample-box strong { display: block; margin-bottom: .4rem; color: var(--color-text); }
+
+    .contact-wrap {
+      display: grid; grid-template-columns: 1.1fr .9fr; gap: 1rem;
+    }
+    form {
+      background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 1.2rem; box-shadow: var(--shadow-sm);
+    }
+    .field-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: .9rem; }
+    .field { display: grid; gap: .35rem; margin-bottom: .9rem; }
+    .field label { font-size: var(--text-xs); color: var(--color-text-muted); text-transform: uppercase; letter-spacing: .06em; }
+    .field input, .field select, .field textarea {
+      width: 100%; min-height: 48px; padding: .85rem .95rem; border-radius: .95rem; border: 1px solid var(--color-border);
+      background: var(--color-bg); color: var(--color-text);
+    }
+    .field textarea { min-height: 136px; resize: vertical; }
+    .contact-info {
+      display: grid; gap: 1rem;
+    }
+    .info-panel {
+      background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 1.2rem; box-shadow: var(--shadow-sm);
+    }
+    .info-panel h3 { margin-top: 0; margin-bottom: .5rem; font-size: var(--text-lg); }
+    .info-panel p, .info-panel li { font-size: var(--text-sm); color: var(--color-text-muted); }
+    .info-panel ul { padding-left: 1rem; margin: .75rem 0 0; }
+
+    .site-footer {
+      border-top: 1px solid var(--color-border); padding: 1.4rem 0 2.2rem; color: var(--color-text-muted); font-size: var(--text-sm);
+    }
+    .footer-row { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+
+    @media (max-width: 960px) {
+      .hero, .contact-wrap, .language-wrap, .services-grid, .faq-grid, .process, .audience-grid { grid-template-columns: 1fr; }
+      .hero h1 { max-width: 14ch; }
+      .nav-links { display: none; position: absolute; top: 78px; left: 1rem; right: 1rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: .8rem; flex-direction: column; align-items: stretch; box-shadow: var(--shadow-md); }
+      .nav-links.open { display: flex; }
+      .menu-toggle { display: grid; }
+      .field-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      .container { width: min(var(--content), calc(100% - 1rem)); }
+      .nav { min-height: 72px; }
+      .hero-points { grid-template-columns: 1fr; }
+      .nav-actions .button { display: none; }
+      .hero { padding-top: 2.2rem; }
+      .section-heading { align-items: start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="EuroAfricaLink home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 16L9 11L13 15L20 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15 8H20V13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>EuroAfricaLink</strong>
+          <span>Sourcing • Procurement • Shipping</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navMenu" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a href="#french">French version</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button class="menu-toggle" type="button" id="menuToggle" aria-label="Open menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+        <a href="#contact" class="button button-primary">Request a quote</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <section class="hero" id="top">
+        <div>
+          <span class="eyebrow">Based in Douala, Cameroon</span>
+          <h1>We source in Europe, purchase on your behalf, and ship to your destination.</h1>
+          <p>
+            For companies and individuals buying machinery, spare parts, automobiles and merchandise from Europe,
+            we coordinate sourcing, supplier checks, purchasing and transport to Douala and other African destinations.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Start a request</a>
+            <a class="button button-secondary" href="#french">Voir la version française</a>
+          </div>
+          <div class="hero-points">
+            <div class="hero-point"><strong>Trusted sourcing</strong><span>Machinery, vehicles, industrial parts and commercial goods.</span></div>
+            <div class="hero-point"><strong>One contact</strong><span>From supplier search to export and shipping coordination.</span></div>
+            <div class="hero-point"><strong>Clear process</strong><span>Request, quote, approval, purchase, shipment, delivery follow-up.</span></div>
+            <div class="hero-point"><strong>Douala-focused</strong><span>Built for importers in Cameroon and the wider region.</span></div>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Service overview">
+          <div class="hero-panel-top">
+            <div>
+              <div class="tag">Typical route</div>
+              <strong>Europe to Douala</strong>
+            </div>
+            <span class="eyebrow" style="margin:0;">Sea • Air • Road</span>
+          </div>
+          <div class="hero-visual">
+            <div class="route-card">
+              <div class="route-line">
+                <span>Supplier in Europe</span>
+                <span class="route-dot" aria-hidden="true"></span>
+                <span class="route-dash" aria-hidden="true"></span>
+                <span>Douala / Destination</span>
+              </div>
+            </div>
+            <div class="quote-card mini-list">
+              <div class="mini-item">
+                <span>01</span>
+                <div><b>Tell us what you need</b>Brand, model, quantity, budget and deadline.</div>
+              </div>
+              <div class="mini-item">
+                <span>02</span>
+                <div><b>Receive matched offers</b>We compare suppliers, product details and shipment options.</div>
+              </div>
+              <div class="mini-item">
+                <span>03</span>
+                <div><b>Approve and ship</b>We handle purchase coordination and transport arrangements.</div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="services">
+        <div class="section-heading">
+          <div>
+            <h2>Services</h2>
+          </div>
+          <p>Use this site as a professional front door for sourcing enquiries from importers, traders, SMEs and individual buyers.</p>
+        </div>
+        <div class="services-grid">
+          <article class="card">
+            <div class="kicker">Procurement</div>
+            <h3>Machinery and equipment sourcing</h3>
+            <p>We find construction, industrial and agricultural equipment from reliable European suppliers based on your exact requirements.</p>
+          </article>
+          <article class="card">
+            <div class="kicker">Automotive</div>
+            <h3>Cars, trucks and commercial vehicles</h3>
+            <p>We help clients purchase new or used automobiles, fleet vehicles and utility units with documented options before commitment.</p>
+          </article>
+          <article class="card">
+            <div class="kicker">Parts</div>
+            <h3>Spare parts and mixed merchandise</h3>
+            <p>We source OEM and aftermarket parts, tools and smaller goods, then consolidate them for efficient shipment.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <div>
+            <h2>Who this is for</h2>
+          </div>
+          <p>Keep the message practical and commercial so visitors immediately understand whether your service fits their needs.</p>
+        </div>
+        <div class="audience-grid">
+          <article class="card">
+            <div class="kicker">Businesses</div>
+            <h3>SMEs, contractors and import companies</h3>
+            <p>Ideal for businesses that need dependable sourcing support, recurring supply, purchase coordination and organized shipping.</p>
+            <ul>
+              <li>Construction and industrial buyers</li>
+              <li>Auto dealers and fleet operators</li>
+              <li>Import and trading companies</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="kicker">Individuals</div>
+            <h3>Private buyers with a clear brief</h3>
+            <p>Also suitable for individual clients purchasing one vehicle, one machine or a specific set of parts from Europe.</p>
+            <ul>
+              <li>Single-unit vehicle purchase</li>
+              <li>Targeted spare part orders</li>
+              <li>Personal import assistance</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="process">
+        <div class="section-heading">
+          <div>
+            <h2>How it works</h2>
+          </div>
+          <p>A clear service flow builds trust and reduces back-and-forth with new clients.</p>
+        </div>
+        <div class="process">
+          <article class="step">
+            <div class="step-no">Step 1</div>
+            <h3>Client request</h3>
+            <p>The buyer shares the product description, target budget, quantity and destination.</p>
+          </article>
+          <article class="step">
+            <div class="step-no">Step 2</div>
+            <h3>Sourcing and quotation</h3>
+            <p>We identify suitable European suppliers and present pricing, specifications and shipment options.</p>
+          </article>
+          <article class="step">
+            <div class="step-no">Step 3</div>
+            <h3>Approval and purchase</h3>
+            <p>Once the client approves, we coordinate the purchase process and required documentation.</p>
+          </article>
+          <article class="step">
+            <div class="step-no">Step 4</div>
+            <h3>Shipping and follow-up</h3>
+            <p>We arrange the best available transport method and support delivery follow-up to destination.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="french">
+        <div class="section-heading">
+          <div>
+            <h2>French version</h2>
+          </div>
+          <p>This section gives you ready-to-use French web text for the same business, which is especially useful for Cameroon-based clients.</p>
+        </div>
+        <div class="language-wrap">
+          <article class="lang-card">
+            <h3>Texte d’accueil</h3>
+            <p>
+              Nous accompagnons les entreprises et les particuliers qui souhaitent acheter des machines,
+              des pièces détachées, des automobiles et diverses marchandises en Europe. Nous recherchons,
+              vérifions, achetons et organisons l’expédition vers Douala et toute autre destination convenue.
+            </p>
+            <div class="sample-box">
+              <strong>Titre principal</strong>
+              Approvisionnement et expédition de l’Europe vers l’Afrique.
+            </div>
+            <div class="sample-box">
+              <strong>Sous-titre</strong>
+              Un interlocuteur unique pour la recherche de fournisseurs, l’achat et l’organisation du transport.
+            </div>
+          </article>
+          <article class="lang-card">
+            <h3>Services en français</h3>
+            <ul>
+              <li>Recherche de fournisseurs et négociation en Europe.</li>
+              <li>Achat de machines, véhicules, pièces et marchandises diverses.</li>
+              <li>Contrôle documentaire et coordination de l’expédition.</li>
+              <li>Organisation du transport maritime, aérien ou routier selon le besoin.</li>
+              <li>Suivi de livraison vers Douala ou autre destination.</li>
+            </ul>
+            <div class="sample-box">
+              <strong>Appel à l’action</strong>
+              Demandez un devis et recevez une proposition adaptée à votre besoin.
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <div>
+            <h2>FAQ blocks</h2>
+          </div>
+          <p>Useful short answers can be placed on the homepage or expanded on a dedicated FAQ page later.</p>
+        </div>
+        <div class="faq-grid">
+          <article class="card">
+            <h3>Which products can you source?</h3>
+            <p>Machinery, spare parts, automobiles, commercial vehicles and selected merchandise from European suppliers.</p>
+          </article>
+          <article class="card">
+            <h3>Can individuals use the service?</h3>
+            <p>Yes. The service can support both companies and private buyers with clear sourcing requirements.</p>
+          </article>
+          <article class="card">
+            <h3>Where is the main base?</h3>
+            <p>The business presentation is centered on Douala, Cameroon, with procurement activity focused on Europe.</p>
+          </article>
+          <article class="card">
+            <h3>How do clients start?</h3>
+            <p>They submit a request describing the goods, budget, destination and expected timeline.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="section-heading">
+          <div>
+            <h2>Contact and quote form</h2>
+          </div>
+          <p>Replace the sample details below with your real business email, phone number, address and submission endpoint.</p>
+        </div>
+        <div class="contact-wrap">
+          <form>
+            <div class="field-grid">
+              <div class="field">
+                <label for="name">Name / Company</label>
+                <input id="name" type="text" placeholder="Your name or company" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="you@example.com" />
+              </div>
+            </div>
+            <div class="field-grid">
+              <div class="field">
+                <label for="phone">Phone / WhatsApp</label>
+                <input id="phone" type="tel" placeholder="+237 ..." />
+              </div>
+              <div class="field">
+                <label for="category">Request type</label>
+                <select id="category">
+                  <option>Machinery / Equipment</option>
+                  <option>Vehicle / Automobile</option>
+                  <option>Parts / Mixed goods</option>
+                  <option>Other procurement request</option>
+                </select>
+              </div>
+            </div>
+            <div class="field-grid">
+              <div class="field">
+                <label for="destination">Destination</label>
+                <input id="destination" type="text" placeholder="Douala or other destination" />
+              </div>
+              <div class="field">
+                <label for="budget">Budget</label>
+                <input id="budget" type="text" placeholder="Estimated budget" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="details">What do you need?</label>
+              <textarea id="details" placeholder="Brand, model, quantity, condition, timeline and any specific requirements."></textarea>
+            </div>
+            <button type="submit" class="button button-primary" style="width:100%;">Send request</button>
+          </form>
+
+          <div class="contact-info">
+            <aside class="info-panel">
+              <h3>Suggested contact details block</h3>
+              <p>Use this panel for your real business information and availability.</p>
+              <ul>
+                <li>Office: Douala, Cameroon</li>
+                <li>Email: info@yourcompany.com</li>
+                <li>Phone / WhatsApp: +237 XXX XXX XXX</li>
+                <li>Hours: Monday to Friday, 9:00 – 18:00</li>
+              </ul>
+            </aside>
+            <aside class="info-panel">
+              <h3>French contact text</h3>
+              <p>
+                Basés à Douala, nous aidons nos clients à acheter en Europe et à organiser l’expédition de leurs marchandises vers leur destination finale.
+              </p>
+              <ul>
+                <li>Demande de devis rapide</li>
+                <li>Réponse personnalisée selon le besoin</li>
+                <li>Suivi de l’achat jusqu’à l’expédition</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> EuroAfricaLink. Procurement and logistics website template.</div>
+      <div>This is a static HTML template ready to customize and deploy.</div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const toggle = document.querySelector('[data-theme-toggle]');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      let theme = prefersDark ? 'dark' : 'light';
+      root.setAttribute('data-theme', theme);
+
+      function icon(t) {
+        return t === 'dark'
+          ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>'
+          : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+      }
+
+      function applyTheme() {
+        root.setAttribute('data-theme', theme);
+        if (toggle) {
+          toggle.innerHTML = icon(theme);
+          toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+        }
+      }
+
+      applyTheme();
+      if (toggle) toggle.addEventListener('click', function () { theme = theme === 'dark' ? 'light' : 'dark'; applyTheme(); });
+
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+      if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', function () {
+          navMenu.classList.toggle('open');
+        });
+        navMenu.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () { navMenu.classList.remove('open'); });
+        });
+      }
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
